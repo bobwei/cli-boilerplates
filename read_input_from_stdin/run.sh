@@ -1,3 +1,2 @@
 echo "Please enter your password: "
-read -sr PASSWORD_INPUT
-export PASSWORD=$PASSWORD_INPUT
+export PASSWORD=$(read -sr input && echo $input)
